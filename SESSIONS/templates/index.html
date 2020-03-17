@@ -1,0 +1,17 @@
+{#<form action="{% url 'check' %}" method="post">#}
+{#    {% csrf_token %}#}
+{#    <center>#}
+{#    <tr><td><input type="text" placeholder="user name" name="u1" required></td></tr><br><br>#}
+{#    <tr><td><input type="password" placeholder="password" name="u2" required></td></tr><br><br>#}
+{#    <tr><td><button type="submit">login</button> </td></tr>#}
+{#</center>#}
+{#</form>#}
+
+<form action="{% url  'check' %}" method="post">
+    {% csrf_token %}
+    <center>
+        <tr><td><input type="text" placeholder="username" name="u1" required></td></tr><br><br>
+        <tr><td><input type="password" placeholder="password" name="u2" required></td></tr><br><br>
+        <tr><td><button type="submit">login</button> </td></tr>
+    </center>
+</form>
